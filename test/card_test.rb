@@ -10,7 +10,7 @@ class CardTest < Minitest::Test
   end
 
   def test_it_has_readable_attributes
-    card1 = Card.new(:diamond, 'Queen', 12)
+    card = Card.new(:diamond, 'Queen', 12)
 
     assert_equal :diamond, card.suit
     assert_equal 'Queen', card.value
